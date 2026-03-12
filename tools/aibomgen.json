@@ -12,7 +12,6 @@
             "OPEN_SOURCE"
         ],
         "functions": [
-            "AUTHOR",
             "SIGNING/NOTARY"
         ],
         "packaging": [

@@ -13,9 +13,6 @@
         "availability": [
             "OPEN_SOURCE"
         ],
-        "functions": [
-            "AUTHOR"
-        ],
         "packaging": [
             "GITHUB_ACTION"
         ],
