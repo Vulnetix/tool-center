@@ -1,7 +1,7 @@
 {
   "$schema": "https://cyclonedx.org/schema/tool-center-v2.schema.json",
   "specVersion": "2.0",
-  "last_updated": "2026-02-27T13:33:53Z",
+  "last_updated": "2026-03-17T09:49:21Z",
   "license": {
     "id": "CC-BY-SA-4.0",
     "name": "Creative Commons Attribution-ShareAlike 4.0 International",
@@ -104,6 +104,107 @@
         "LIBRARY"
       ],
       "_fromFile": "ai_sbom_generator.json"
+    },
+    {
+      "name": "AIBoMGen CLI Action",
+      "publisher": "IDLab, Ghent University, imec",
+      "description": "A GitHub Action that generates a CycloneDX AI Bill of Materials for Hugging Face models referenced in a repository using AIBoMGen-cli.",
+      "repository_url": "https://github.com/CRACY-project/AIBoMGen-cli-action",
+      "capabilities": [
+        "AI/ML-BOM",
+        "SBOM"
+      ],
+      "availability": [
+        "OPEN_SOURCE"
+      ],
+      "packaging": [
+        "GITHUB_ACTION"
+      ],
+      "lifecycle": [
+        "POST-BUILD"
+      ],
+      "supportedStandards": [
+        "CYCLONEDX"
+      ],
+      "_fromFile": "aibomgen-cli-action.json"
+    },
+    {
+      "name": "AIBoMGen CLI",
+      "publisher": "IDLab, Ghent University, imec",
+      "description": "A Go CLI tool that scans repositories for Hugging Face model usage, generates CycloneDX AI BOMs, validates, checks completeness, enriches, and merges AIBOMs with SBOMs.",
+      "repository_url": "https://github.com/idlab-discover/AIBoMGen-cli",
+      "capabilities": [
+        "AI/ML-BOM",
+        "SBOM"
+      ],
+      "availability": [
+        "OPEN_SOURCE"
+      ],
+      "functions": [
+        "ANALYSIS",
+        "TRANSFORM"
+      ],
+      "transform": [
+        "BOM_SERIALIZATION_FORMAT",
+        "BOM_VERSION"
+      ],
+      "packaging": [
+        "COMMAND_LINE_UTILITY",
+        "LIBRARY",
+        "APPLICATION"
+      ],
+      "library": [
+        "GO"
+      ],
+      "platform": [
+        "LINUX",
+        "MAC",
+        "WINDOWS"
+      ],
+      "lifecycle": [
+        "POST-BUILD"
+      ],
+      "supportedStandards": [
+        "CYCLONEDX"
+      ],
+      "supportedLanguages": [
+        "PYTHON",
+        "JAVASCRIPT/TYPESCRIPT"
+      ],
+      "_fromFile": "aibomgen-cli.json"
+    },
+    {
+      "name": "AIBoMGen",
+      "publisher": "IDLab, Ghent University, imec",
+      "description": "A proof-of-concept platform for generating AI Bills of Materials (AIBOMs) during distributed AI model training. This is a reference and research architecture: not meant for production.",
+      "repository_url": "https://github.com/idlab-discover/AIBoMGen",
+      "capabilities": [
+        "AI/ML-BOM",
+        "SBOM"
+      ],
+      "availability": [
+        "OPEN_SOURCE"
+      ],
+      "functions": [
+        "SIGNING/NOTARY"
+      ],
+      "packaging": [
+        "APPLICATION"
+      ],
+      "lifecycle": [
+        "BUILD",
+        "POST-BUILD"
+      ],
+      "supportedStandards": [
+        "CYCLONEDX"
+      ],
+      "cycloneDxVersion": [
+        "CYCLONEDX_V1.6"
+      ],
+      "supportedLanguages": [
+        "PYTHON"
+      ],
+      "_fromFile": "aibomgen.json"
     },
     {
       "name": "Aikido Security",
